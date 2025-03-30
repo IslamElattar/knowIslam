@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: url('https://www.transparenttextures.com/patterns/arabesque.png'), #f4f0e5;
             color: #333;
         }
         .menu {
@@ -22,6 +22,7 @@
             border-radius: 8px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             cursor: pointer;
+            z-index: 1000;
         }
         .nav {
             display: none;
@@ -32,6 +33,7 @@
             border-radius: 8px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            z-index: 1000;
         }
         .nav a {
             display: block;
@@ -45,33 +47,43 @@
         }
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 80px auto 20px;
             padding: 20px;
             background: white;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h2 {
-            color: #006400;
+            color: #0b3d02;
+            border-bottom: 2px solid #006400;
+            padding-bottom: 5px;
         }
         .quote {
             font-style: italic;
-            margin: 10px 0;
             color: #555;
+            background: #e8f5e9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         .resources a {
             display: block;
-            color: #006400;
+            color: #0b3d02;
             text-decoration: none;
-            margin: 5px 0;
+            margin: 8px 0;
+            font-weight: bold;
+        }
+        .resources a:hover {
+            color: #ffd700;
         }
         footer {
             margin-top: 20px;
             padding: 10px;
-            background-color: #006400;
+            background: linear-gradient(to right, #0b3d02, #006400);
             color: white;
             text-align: center;
+            border-radius: 10px 10px 0 0;
         }
     </style>
 </head>
@@ -79,39 +91,39 @@
 
 <div class="menu" onclick="toggleNav()">☰ Menu</div>
 <div class="nav" id="nav">
-    <a href="#intro">Introduction</a>
-    <a href="#hadith">Daily Hadith</a>
-    <a href="#articles">Islamic Articles</a>
+    <a href="#about">About</a>
+    <a href="#hadith">Hadith</a>
+    <a href="#articles">Articles</a>
     <a href="#resources">Resources</a>
 </div>
 
-<div class="container" id="intro">
-    <h2>Welcome to the Path of Knowledge</h2>
-    <p>Islam is a complete way of life that promotes peace, justice, and spiritual fulfillment.</p>
+<div class="container" id="about">
+    <h2>About Islam</h2>
+    <p>Islam is a faith of peace, submission, and knowledge. It provides guidance for a fulfilling and purposeful life.</p>
 </div>
 
 <div class="container" id="hadith">
     <h2>Daily Hadith</h2>
-    <p class="quote">"The best among you are those who have the best manners and character." - Prophet Muhammad (ﷺ)</p>
+    <p class="quote">"The strong believer is better and more beloved to Allah than the weak believer, although there is good in each." - Prophet Muhammad (ﷺ)</p>
 </div>
 
 <div class="container" id="articles">
     <h2>Islamic Articles</h2>
-    <p><strong>1. The Importance of Prayer (Salah)</strong><br> Salah is the key to success and a direct connection with Allah.</p>
-    <p><strong>2. The Meaning of Tawheed</strong><br> Tawheed (oneness of Allah) is the foundation of Islam.</p>
+    <p><strong>1. The Importance of Prayer (Salah)</strong><br> Salah is a direct connection between the believer and Allah.</p>
+    <p><strong>2. The Meaning of Tawheed</strong><br> Tawheed (Oneness of Allah) is the foundation of Islamic belief.</p>
 </div>
 
 <div class="container" id="resources">
     <h2>Useful Islamic Resources</h2>
     <div class="resources">
-        <a href="https://www.quran.com" target="_blank">Quran Online</a>
-        <a href="https://sunnah.com" target="_blank">Hadith Collection</a>
-        <a href="https://www.islamqa.info" target="_blank">Islamic Q&A</a>
+        <a href="https://www.quran.com" target="_blank">📖 Read the Quran</a>
+        <a href="https://sunnah.com" target="_blank">📜 Authentic Hadith Collection</a>
+        <a href="https://www.islamqa.info" target="_blank">❓ Islamic Q&A</a>
     </div>
 </div>
 
 <footer>
-    © 2025 Islamic Knowledge Hub | Seeking the Truth
+    &copy; 2025 Islamic Knowledge Hub | Seeking the Truth
 </footer>
 
 <script>
